@@ -1,0 +1,9 @@
+Fundamentals
+
+1. What is a workflow?
+
+2. Mastering the basics
+
+3. Data transformation
+
+4. Your first automation 

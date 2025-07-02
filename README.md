@@ -7,7 +7,7 @@ This repository tracks my learning progress through AI Automation lessons and ma
 ## 📁 Repository Structure
 
 ```
-AI-Automation-Lessions/
+AI-Automation-Lesions/
 ├── README.md                    # Main progress overview (this file)
 ├── sections/                    # Individual lesson sections
     ├── section-01/             # First section materials
@@ -20,9 +20,9 @@ AI-Automation-Lessions/
 
 ## 📊 Progress Tracking
 
-### Overall Progress:
+### Overall Progress':'
 
-- [ ] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started
+- [ ] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started (section 1 getting started)
 
 ## 📝 Learning Methodology
 
@@ -45,6 +45,6 @@ For each section, I will:
 
 - **Start Date**: [02.07.2025]
 - **Target Completion**: [To be determined]
-- **Last Updated**: [02.07.2025]
+- **Last Updated**: [03.07.2025]
 
 _This repository serves as a comprehensive learning journal and progress tracker for AI Automation lessons. Each section will be updated as I progress through the materials._

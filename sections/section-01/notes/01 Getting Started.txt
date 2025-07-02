@@ -2,15 +2,43 @@ Getting Started
 
 
 1. Whats N8N?
-
-
 2. Why N8N?
-
-
 3. Do i need to know how to code?
-
-
 4 What can i build with it?
-
-
 5. How to set up and host.
+
+
+Note:
+- **Examples of automation:**
+  - Customer fills out a form on your website → automatically sends confirmation email and adds info to your database
+  - Receiving an invoice → automatically sorted, processed, and sent for approval
+  - New employees join → accounts and access are automatically created based on their role
+- **Main benefits:**
+  - Saves time and reduces manual work
+  - Fewer human errors
+  - Consistent results every time
+  - People can focus on more important tasks
+
+
+To start with n8n ive created a free (14days trail) acc and using the basic tutorial:https://www.youtube.com/watch?v=uScURRX-Knc&ab_channel=SimonScrapes%7CAIAutomation
+ive created a test workflow
+
+Video process in the beginning is to setup a self hosted server using https://elest.io/ (with my google acc)
+  - selected n8n service
+  - using Hetzner and all the preselected settings! 
+  - i need to stop it when the video is over!!!
+  - HOSTED HERE: https://n8n-scrapesai-u50186.vm.elestio.app/home/workflows
+
+During the process of test building app we had to login and use Airtable and create a new database with auth token
+ - https://docs.n8n.io/integrations/builtin/credentials/airtable/?utm_source=n8n_app&utm_medium=credential_settings&utm_campaign=create_new_credentials_modal#using-personal-access-token
+ - https://airtable.com/create/tokens/new
+ - https://airtable.com/app6rCt79eOtfh1gW/tblF1nhc6c75hjGRU/viwr0AzvYNmJiYNxi?blocks=hide
+
+ NAMING CONSISTENCY IS VERY IMPORTANT
+ GET
+ POST
+ UPDATE
+ DELATE
+
+ END of first section is at https://youtu.be/uScURRX-Knc?t=3479
+ Core concepts of adding triggers and editing and manipulating data were learned 
