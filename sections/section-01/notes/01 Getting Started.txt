@@ -1,0 +1,16 @@
+Getting Started
+
+
+1. Whats N8N?
+
+
+2. Why N8N?
+
+
+3. Do i need to know how to code?
+
+
+4 What can i build with it?
+
+
+5. How to set up and host.
