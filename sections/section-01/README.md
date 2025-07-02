@@ -4,14 +4,6 @@
 
 **Video Link**: [The only video you need to Master N8N + AI agents (For complete beginners)](https://www.youtube.com/watch?v=uScURRX-Knc&ab_channel=SimonScrapes%7CAIAutomation)
 
-## 🎯 Learning Objectives
-
-- [x] Understand N8N basics and interface
-- [ ] Learn how to create AI agents
-- [ ] Master workflow automation concepts
-- [ ] Implement practical examples from the video
-- [ ] Understand integration possibilities
-
 ## 📊 Progress Tracking
 
 ### Video Progress
@@ -21,6 +13,14 @@
 - [ ] Section 03 Data from your Business
 - [ ] Section 04 Agentic Workflows
 - [ ] Section 05 Making Your Life Easy
+
+## 🎯 Learning Objectives
+
+- [x] Understand N8N basics and interface
+- [ ] Learn how to create AI agents
+- [ ] Master workflow automation concepts
+- [ ] Implement practical examples from the video
+- [ ] Understand integration possibilities
 
 ### Practical Implementation
 
