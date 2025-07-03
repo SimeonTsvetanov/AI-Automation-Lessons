@@ -1,9 +1,17 @@
 Fundamentals
 
 1. What is a workflow?
-
 2. Mastering the basics
-
 3. Data transformation
-
 4. Your first automation 
+
+New Project for collecting and editing data from emails
+
+* Using Gmail, we have to setup ne Auth2.0 from Google Console
+    - Drive, Calendar, Sheets, Gmail
+    - Then we create AUTH Client with the OAuth Redirect URL provided by the n8n element!
+    P.S. -> DON'T FORGET TO ADD FOR TEST CLIENT YOUR EMAIL (not in video and it won't work without it!!!)
+* Creating Set Email Values so we can access only the values needed 
+* Using Convert to Markdown (as in the example html -> to mark down)
+* Posting Email using our Airtable (we had to create new table for it!)
+
