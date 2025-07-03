@@ -18,7 +18,6 @@ first is explanation of what is the difference between agentic and non-agentic w
 
 The key difference is that agentic workflows have agency - they can think, decide, and act autonomously, while non-agentic workflows simply execute predetermined instructions.
 
-
 ## What are N8N LLM Nodes?
 
 N8N LLM nodes are AI-powered components that let you add intelligent text processing to your workflows. They can:
@@ -31,7 +30,6 @@ N8N LLM nodes are AI-powered components that let you add intelligent text proces
 **How they work:** You send text to an LLM node, it processes it through an AI model (like GPT), and returns intelligent responses that other nodes can use.
 
 **Why they matter:** They make your workflows "agentic" by adding AI decision-making instead of just following rigid rules.
-
 
 ## What are N8N AI Agents?
 
@@ -50,31 +48,30 @@ N8N AI agents are intelligent workflow components that combine multiple AI capab
 
 ## Why It's Important to Distinguish Between LLMs and AI Agents
 
-| **Feature**            | **LLM**                        | **AI Agent**                                 |
-|------------------------|--------------------------------|----------------------------------------------|
-| Core Capability        | Text generation                | Goal-oriented task completion                |
-| Decision-Making        | None                           | Yes                                          |
-| Uses Tools/APIs        | No                             | Yes                                          |
-| Workflow Complexity    | Single-step                    | Multi-step                                   |
-| Scope                  | Generates language             | Performs complex, real-world tasks           |
-| Example                | LLM generating a paragraph     | An agent scheduling an appointment           |
+| **Feature**         | **LLM**                    | **AI Agent**                       |
+| ------------------- | -------------------------- | ---------------------------------- |
+| Core Capability     | Text generation            | Goal-oriented task completion      |
+| Decision-Making     | None                       | Yes                                |
+| Uses Tools/APIs     | No                         | Yes                                |
+| Workflow Complexity | Single-step                | Multi-step                         |
+| Scope               | Generates language         | Performs complex, real-world tasks |
+| Example             | LLM generating a paragraph | An agent scheduling an appointment |
 
-**Why this matters:**  
+**Why this matters:**
 
 - **LLMs** are great for generating or transforming text, but they don't make decisions or interact with external systems on their own.
 - **AI Agents** can reason, make decisions, use tools/APIs, and complete multi-step, real-world tasks autonomously.
 
-When building workflows, knowing this distinction helps you choose the right approach:  
+When building workflows, knowing this distinction helps you choose the right approach:
 
 - Use LLM nodes for language tasks.
 - Use AI Agents when you need autonomous, goal-driven behavior that interacts with the world.
 
 ---
 
-
 ## Visualizing Agentic Workflows: How AI Agents Operate
 
-![Diagram: Agentic Workflow in Action](../implementations/AI%20AGENT.png)
+![Diagram: Agentic Workflow in Action](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-01/implementations/AI%20AGENTS%20-%20AGENTIC%20APPLICATIONS.png)
 Below is a clear, step-by-step visualization of how an AI agent processes a task, inspired by the diagram above:
 
 1. **User Input:** The process starts when a user provides an input or question.
