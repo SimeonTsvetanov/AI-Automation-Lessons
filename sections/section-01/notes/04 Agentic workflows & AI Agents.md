@@ -82,3 +82,21 @@ Below is a clear, step-by-step visualization of how an AI agent processes a task
 6. **AI Agent Output:** Once the agent is satisfied with the result, it outputs the final answer to the user.
 
 This loop allows the agent to autonomously reason, use external resources, and iteratively improve its answers—making it much more powerful than a single-step LLM.
+
+---
+
+## Real-World Examples: Customer Support Evolution
+
+### 1. Non-Agentic Chatbot (Templates)
+
+A simple chatbot that responds with predefined templates based on keywords. It can answer basic questions but cannot handle complex scenarios or learn from interactions.
+
+### 2. Agentic Chatbot (Human Feedback Loop)
+
+An intelligent chatbot that can understand context, make decisions, and escalate to humans when needed. It learns from human feedback to improve future responses.
+
+### 3. AI Agentic System (Multi-Channel Support Management)
+
+A comprehensive AI agent that monitors multiple support channels, analyzes customer sentiment for prioritization, automatically routes tickets, and can resolve issues across different systems without human intervention.
+
+to continue the video progress [click here](https://youtu.be/uScURRX-Knc?t=9945)
