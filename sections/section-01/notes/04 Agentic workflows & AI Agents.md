@@ -7,3 +7,5 @@
 3. **Using AI in your workflows**
 4. **Prompt techniques**
 5. **N8N AI Nodes explained**
+
+1 point given is to make clear distinction between agentic flows and LLM.
