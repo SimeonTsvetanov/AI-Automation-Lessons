@@ -9,8 +9,8 @@
 ### Video Progress
 
 - [x] Section 01 Getting Started
-- [ ] Section 02 Fundamentals
-- [ ] Section 03 Data from your Business
+- [x] Section 02 Fundamentals
+- [x] Section 03 Data from your Business
 - [ ] Section 04 Agentic Workflows
 - [ ] Section 05 Making Your Life Easy
 
