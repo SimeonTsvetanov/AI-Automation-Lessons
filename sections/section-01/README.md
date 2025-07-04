@@ -12,15 +12,16 @@
 - [x] Section 02 Fundamentals
 - [x] Section 03 Data from your Business
 - [x] Section 04 Agentic Workflows
-- [ ] Section 05 Making Your Life Easy
+- [x] Section 05 Data from Outside Your Business
+- [ ] Section 06 Making Your Life Easy
 
 ## 🎯 Learning Objectives
 
 - [x] Understand N8N basics and interface
 - [x] Learn how to create AI agents
 - [ ] Master workflow automation concepts
-- [ ] Implement practical examples from the video
-- [ ] Understand integration possibilities
+- [x] Implement practical examples from the video
+- [x] Understand integration possibilities
 
 ### Practical Implementation
 

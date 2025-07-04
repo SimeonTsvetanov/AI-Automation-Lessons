@@ -91,17 +91,12 @@ There are different HTTP methods (commands) to communicate with APIs:
 
 ### Project Description
 
-Replace the existing email PDF extraction workflow with external API integration to extract data from emails/PDFs and populate our database.
-
-### Project Goals
-
-- [x] Integrate external API for PDF/text extraction
-- [x] Replace manual email processing with automated API calls
-- [ ] Streamline data extraction and database population
-- [ ] Improve accuracy and speed of data processing
+Replace the existing email PDF extraction workflow with external API integration to extract data from emails/PDFs and populate our database. Task uses the pdf.co AIP and with the help of HTTP Req. notes and other will filter and populate all data provided from the email to our table.
 
 ### Resources Used
 
 - [pdf.co](https://pdf.co/)
 
 ---
+
+![n8n workflow](todo)

@@ -8,8 +8,8 @@ This repository tracks my learning progress through AI Automation lessons and ma
 
 ```
 AI-Automation-Lesions/
-├── README.md                    # Main progress overview (this file)
-├── sections/                    # Individual lesson sections
+├── README.md                   # Main progress overview (this file)
+├── sections/                   # Individual lesson sections
     ├── section-01/             # First section materials
     │   ├── README.md           # Section-specific progress
     │   ├── notes/              # Personal notes and insights
