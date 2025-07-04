@@ -10,6 +10,6 @@ We have amended a bit the workflow editing only fields that we will need. And al
 
 Also by the end of the video the presenter showed how to use hooks and request.
 
-The completed workflow created during the video can be found: [if you click here](todo).
+The completed workflow created during the video can be found: [if you click here](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-02/Beginner/materials/Workflow%20-%20Get%20Data%20from%20Sheets%20Table%20filter%20it%20as%20needed%20and%20sent%20as%20Email.json).
 
 ---
