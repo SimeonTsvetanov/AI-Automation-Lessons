@@ -101,4 +101,4 @@ A comprehensive AI agent that monitors multiple support channels, analyzes custo
 
 By the end of the section we completely managed to export the data and details using AI agent into our new Table.
 
-![n8n workflow](TODO)
+![n8n workflow](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-01/implementations/Section%204%20Completed%20Screenshot%20of%20progress.png)
