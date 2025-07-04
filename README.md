@@ -6,8 +6,7 @@ This repository tracks my learning progress through AI Automation lessons and ma
 
 ## 📁 Repository Structure
 
-```
-AI-Automation-Lesions/
+```AI-Automation-Lesions/
 ├── README.md                   # Main progress overview (this file)
 ├── sections/                   # Individual lesson sections
     ├── section-01/             # First section materials
