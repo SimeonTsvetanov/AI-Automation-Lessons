@@ -99,4 +99,4 @@ Replace the existing email PDF extraction workflow with external API integration
 
 ---
 
-![n8n workflow](todo)
+![n8n workflow](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-01/implementations/Section%205%20Completed%20Screenshot%20of%20progress.png)
