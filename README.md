@@ -22,7 +22,7 @@ AI-Automation-Lesions/
 
 ### Overall Progress':'
 
-- [ ] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started (section 1 getting started)
+- [x] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started (section 1 getting started)
 
 ## 📝 Learning Methodology
 

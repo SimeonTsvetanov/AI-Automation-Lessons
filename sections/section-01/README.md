@@ -13,13 +13,12 @@
 - [x] Section 03 Data from your Business
 - [x] Section 04 Agentic Workflows
 - [x] Section 05 Data from Outside Your Business
-- [ ] Section 06 Making Your Life Easy
+- [x] Section 06 Making Your Life Easy
 
 ## 🎯 Learning Objectives
 
 - [x] Understand N8N basics and interface
 - [x] Learn how to create AI agents
-- [ ] Master workflow automation concepts
 - [x] Implement practical examples from the video
 - [x] Understand integration possibilities
 
@@ -28,19 +27,12 @@
 - [x] N8N environment set up
 - [x] First workflow created
 - [x] AI agent integration tested
-- [ ] Personal project started
+- [ ] Personal project started - TODO
 
-## 📝 Notes and Insights
+### Project Ideas
 
-_This section will be updated as I progress through the video and take notes._
-
-### Key Concepts Learned
-
-- [To be filled during learning]
-
-### Important Points
-
-- [To be filled during learning]
+- automatically add labels on emails
+- Social Media Caption Generator based of picture provided.
 
 ### Questions/Clarifications Needed
 
@@ -50,12 +42,6 @@ _This section will be updated as I progress through the video and take notes._
 
 [Created Workflow for Automatically extracting data from emails and sorting it using AI Agents and then populating it inside an Airtable](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-01/implementations/Section%204%20Completed%20Screenshot%20of%20progress.png)
 
-### Workflow 1: [Workflow Name]
-
-- **Purpose**: [What this workflow does]
-- **Status**: [Not Started/In Progress/Completed]
-- **Files**: [Links to implementation files]
-
 ## 🔗 Additional Resources
 
 - [n8n Documentation](https://docs.n8n.io/)
@@ -63,9 +49,7 @@ _This section will be updated as I progress through the video and take notes._
 
 ## 📅 Timeline
 
-- **Started**: [02.07.2025]
-- **Completed**: [To be determined]
-- **Last Updated**: [02.07.2025]
+- **Last Updated**: [03.07.2025]
 
 ---
 
