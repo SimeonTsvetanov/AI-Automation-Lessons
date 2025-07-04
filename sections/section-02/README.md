@@ -15,7 +15,7 @@ This section tracks progress through the n8n video course, split into Beginner a
 - [x] 01 Introduction and workflows
 - [x] 02 APIs and Webhooks
 - [x] 03 Nodes
-- [ ] 04 Data in n8n
+- [x] 04 Data in n8n
 - [ ] 05 Core workflow concepts
 - [ ] 06 Useful nodes
 - [ ] 07 Error handling
