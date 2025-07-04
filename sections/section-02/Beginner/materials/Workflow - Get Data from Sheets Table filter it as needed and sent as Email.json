@@ -1,0 +1,402 @@
+{
+  "name": "Test Workflow from Tutorials",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        -160
+      ],
+      "id": "901a8de1-e79a-4d49-ae05-99891ada3a6a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1c0qyOL_PzNRRD3c0Z2k1-bRVyFL0o1xr09fOtzsYucI",
+          "mode": "list",
+          "cachedResultName": "n8n Demo Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1c0qyOL_PzNRRD3c0Z2k1-bRVyFL0o1xr09fOtzsYucI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Data",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1c0qyOL_PzNRRD3c0Z2k1-bRVyFL0o1xr09fOtzsYucI/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        60,
+        -60
+      ],
+      "id": "61cb437e-3f4e-426e-9d10-dfcbb1bf47b2",
+      "name": "GetRowsFromSheet",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "1AwEWXGvtq8ERNZp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        40
+      ],
+      "id": "4e0f5ce5-ee8d-47de-8587-dd9c6cfd2cf7",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "64222457-4a50-4137-8eb4-276681a42abb",
+              "leftValue": "={{ $('GetRowsFromSheet').item.json.email }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        500,
+        -60
+      ],
+      "id": "5f709989-5d87-457d-ba5a-111a6dd7b666",
+      "name": "FilterRowsToIncludeEmails"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "d8365513-d280-426f-9ee5-648dca796907",
+              "leftValue": "={{ $('GetRowsFromSheet').item.json.email }}",
+              "rightValue": "@gmail",
+              "operator": {
+                "type": "string",
+                "operation": "notContains"
+              }
+            },
+            {
+              "id": "7d91118e-88f1-4098-8962-580d7d99f954",
+              "leftValue": "={{ $('GetRowsFromSheet').item.json.email }}",
+              "rightValue": "@hotmail",
+              "operator": {
+                "type": "string",
+                "operation": "notContains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        -60
+      ],
+      "id": "a82da319-0043-4fbd-8b69-90ff86601970",
+      "name": "IfEmailNotProfessional"
+    },
+    {
+      "parameters": {
+        "content": "## Triggers\nStarting the WorkFlow",
+        "height": 460,
+        "width": 220,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        -260
+      ],
+      "id": "3cba17af-c4a1-4a57-b820-6e7e3095cea1",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "43d81fd3-bd6a-4841-bcaf-2bda31f55877",
+              "name": "full_name",
+              "value": "={{ $('GetRowsFromSheet').item.json.first_name }} {{ $('GetRowsFromSheet').item.json.last_name.toUpperCase() }}",
+              "type": "string"
+            },
+            {
+              "id": "84cee933-12af-42b1-a092-f819514ca7fe",
+              "name": "email",
+              "value": "={{ $json.email }}",
+              "type": "string"
+            },
+            {
+              "id": "43391465-b962-43f4-8238-bbcef4b52354",
+              "name": "company",
+              "value": "={{ $json.company }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        280,
+        -60
+      ],
+      "id": "d379f39a-e7c1-4379-8dda-685b709bf42a",
+      "name": "EditAndFilterDetails"
+    },
+    {
+      "parameters": {
+        "content": "## Get the Sheet\nPull Sheet from the Drive",
+        "height": 460,
+        "width": 220,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        20,
+        -260
+      ],
+      "id": "fa97a8d8-ca7c-489a-a383-11fda80df76f",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        940,
+        40
+      ],
+      "id": "09a2bafc-3bba-4ea2-8d00-4d225b879bbf",
+      "name": "NoneProfessionalEmails"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "email"
+            },
+            {
+              "fieldToAggregate": "company"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        940,
+        -160
+      ],
+      "id": "0a41eb29-aa2e-46fe-b73a-91eb47f72fd4",
+      "name": "ProfessionalEmails"
+    },
+    {
+      "parameters": {
+        "sendTo": "tsvetanov.simeon@gmail.com",
+        "subject": "Testing workflow from n8n",
+        "emailType": "text",
+        "message": "=Recap of the sighnups of the Week:\n{{ $json.email }}\n\nList of the company names:\n{{ $json.company }}",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1160,
+        -160
+      ],
+      "id": "15685cc3-1194-4ca2-b243-1daf824008d0",
+      "name": "Send a message",
+      "webhookId": "0df61506-e857-405f-8f86-88c789fcee1e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "OZpcNrFSLvdiRK15",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## Edit and Filter the Data\nCreate Edit the full name and filter only to have proffesional emails",
+        "height": 460,
+        "width": 820,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -260
+      ],
+      "id": "a447c14e-7c26-4c20-a048-c66bcada8a76",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Send Email\nSend Email with the extracted and needed data",
+        "height": 460,
+        "width": 220,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1100,
+        -260
+      ],
+      "id": "62e13959-1f30-46d4-bb24-fe4fe2c65f80",
+      "name": "Sticky Note3"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "GetRowsFromSheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetRowsFromSheet": {
+      "main": [
+        [
+          {
+            "node": "EditAndFilterDetails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "GetRowsFromSheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FilterRowsToIncludeEmails": {
+      "main": [
+        [
+          {
+            "node": "IfEmailNotProfessional",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IfEmailNotProfessional": {
+      "main": [
+        [
+          {
+            "node": "ProfessionalEmails",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "NoneProfessionalEmails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "EditAndFilterDetails": {
+      "main": [
+        [
+          {
+            "node": "FilterRowsToIncludeEmails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ProfessionalEmails": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "3a63fe9c-b1ca-42d0-b7b6-95794d29c110",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "81e2b7bd94681b47604206365a28940f564233ce06039e176f90262c9b9fcf15"
+  },
+  "id": "4f53WDYi0IBT3cCi",
+  "tags": []
+}
