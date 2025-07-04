@@ -10,8 +10,10 @@ Execution logs in n8n provide real-time visibility into how your workflows are r
 
 ## Error handling in n8n Workflows
 
-Error handling in n8n is primarily done through the Try-Catch node, which allows you to execute operations that might fail and handle errors gracefully. The Try section contains nodes that might produce errors, while the Catch section handles any errors that occur with custom logic and fallback options. When errors happen, you can access error details, messages, and stack traces to understand what went wrong and implement appropriate recovery mechanisms. This ensures your workflows continue running even when individual operations fail, making your automations more robust and reliable.
+Error handling in n8n is crucial for building reliable automations. It's important to know when your workflows fail so you can respond appropriately. n8n provides several ways to handle errors:
 
-## Notes
+- **Error Workflow:** You can configure a dedicated Error Workflow that is automatically executed whenever your main workflow fails. This is set up per workflow from the settings tab. The Error Workflow can notify you, log the error, or trigger recovery actions.
+- **Try-Catch Node:** The Try-Catch node allows you to wrap operations that might fail. The "Try" section contains nodes that could produce errors, while the "Catch" section handles any errors with custom logic or fallback steps.
+- **Error Details:** When an error occurs, n8n provides detailed information such as error messages and stack traces. This helps you understand what went wrong and implement the right recovery mechanisms.
 
-todo
+By combining these features, you can ensure your workflows are robust, can recover from failures, and provide visibility into issues as they happen.
