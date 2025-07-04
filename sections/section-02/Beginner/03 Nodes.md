@@ -1,11 +1,9 @@
 # 03 Nodes
 
-## Overview
-
-Notes and progress for the 'Nodes' lesson.
+[Nodes Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced using nodes
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

@@ -1,11 +1,9 @@
 # 01 Introduction and complex data flows
 
-## Overview
-
-Notes and progress for the 'Introduction and complex data flows' lesson.
+[Introduction and complex data flows Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced complex data flows
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

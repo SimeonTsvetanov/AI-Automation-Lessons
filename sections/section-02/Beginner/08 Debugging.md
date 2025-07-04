@@ -1,11 +1,9 @@
 # 08 Debugging
 
-## Overview
-
-Notes and progress for the 'Debugging' lesson.
+[Debugging Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced debugging
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

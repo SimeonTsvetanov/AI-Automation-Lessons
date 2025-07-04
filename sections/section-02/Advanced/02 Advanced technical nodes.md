@@ -1,11 +1,9 @@
 # 02 Advanced technical nodes
 
-## Overview
-
-Notes and progress for the 'Advanced technical nodes' lesson.
+[Advanced technical nodes Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced technical nodes
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

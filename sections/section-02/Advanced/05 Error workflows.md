@@ -1,11 +1,9 @@
 # 05 Error workflows
 
-## Overview
-
-Notes and progress for the 'Error workflows' lesson.
+[Error workflows Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced error workflows
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

@@ -1,11 +1,9 @@
 # 06 Useful nodes
 
-## Overview
-
-Notes and progress for the 'Useful nodes' lesson.
+[Useful nodes Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced with useful nodes
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

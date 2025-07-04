@@ -1,11 +1,9 @@
 # 04 Sub-workflows
 
-## Overview
-
-Notes and progress for the 'Sub-workflows' lesson.
+[Sub-workflows Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced sub-workflows
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

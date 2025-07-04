@@ -1,11 +1,9 @@
 # 03 Pinning and editing output data
 
-## Overview
-
-Notes and progress for the 'Pinning and editing output data' lesson.
+[Pinning and editing output data Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced pinning/editing output data
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

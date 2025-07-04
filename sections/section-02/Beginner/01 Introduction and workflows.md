@@ -1,11 +1,9 @@
 # 01 Introduction and workflows
 
-## Overview
+[Introduction and Workflows Video](https://www.youtube.com/watch?v=4BVTkqbn_tY&ab_channel=n8n)
 
-Notes and progress for the 'Introduction and workflows' lesson.
+- [x] Watched video
 
-- [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced workflow
+## Notes
 
-Add your notes and screenshots in the materials folder.
+in the video we have just a very basic information for the n8n workflows and nodes.

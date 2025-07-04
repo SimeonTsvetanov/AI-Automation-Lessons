@@ -1,11 +1,9 @@
 # 06 Building a full example
 
-## Overview
-
-Notes and progress for the 'Building a full example' lesson.
+[Building a full example Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced building a full example
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

@@ -1,11 +1,9 @@
 # 07 Error handling
 
-## Overview
-
-Notes and progress for the 'Error handling' lesson.
+[Error handling Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced error handling
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

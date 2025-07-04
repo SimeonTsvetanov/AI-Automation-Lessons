@@ -1,11 +1,9 @@
 # 04 Data in n8n
 
-## Overview
-
-Notes and progress for the 'Data in n8n' lesson.
+[Data in n8n Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced data handling
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

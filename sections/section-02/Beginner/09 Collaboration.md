@@ -1,11 +1,9 @@
 # 09 Collaboration
 
-## Overview
-
-Notes and progress for the 'Collaboration' lesson.
+[Collaboration Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced collaboration
+
+## Notes
 
 Add your notes and screenshots in the materials folder.

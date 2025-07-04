@@ -1,11 +1,9 @@
 # 08 Enterprise features
 
-## Overview
-
-Notes and progress for the 'Enterprise features' lesson.
+[Enterprise features Video](todo)
 
 - [ ] Watched video
-- [ ] Took notes
-- [ ] Practiced enterprise features
+
+## Notes
 
 Add your notes and screenshots in the materials folder.
