@@ -47,7 +47,7 @@ _This section will be updated as I progress through the video and take notes._
 
 ## 💻 Implementation Examples
 
-_This section will contain practical code examples and workflows created during learning._
+[Created Workflow for Automatically extracting data from emails and sorting it using AI Agents and then populating it inside an Airtable](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-01/implementations/Section%204%20Completed%20Screenshot%20of%20progress.png)
 
 ### Workflow 1: [Workflow Name]
 
