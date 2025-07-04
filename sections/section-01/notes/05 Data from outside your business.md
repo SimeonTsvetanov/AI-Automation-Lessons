@@ -49,7 +49,6 @@ There are different HTTP methods (commands) to communicate with APIs:
 
 ---
 
-
 ## HTTP Status Codes
 
 **2xx Success Codes:**
@@ -96,25 +95,10 @@ Replace the existing email PDF extraction workflow with external API integration
 
 ### Project Goals
 
-- [ ] Integrate external API for PDF/text extraction
-- [ ] Replace manual email processing with automated API calls
+- [x] Integrate external API for PDF/text extraction
+- [x] Replace manual email processing with automated API calls
 - [ ] Streamline data extraction and database population
 - [ ] Improve accuracy and speed of data processing
-
-### Implementation Steps
-
-- [x] Step 1: Add HTTP Request node
-  - set the note to POST
-  - using Generic Auth Type
-  - and as per API docs we have to use Header Auth (name: x-api-key, value: authcode)
-
-### Notes and Observations
-
-- [To be filled during implementation]
-
-### Challenges Encountered
-
-- [To be filled if any issues arise]
 
 ### Resources Used
 
