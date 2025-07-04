@@ -11,13 +11,13 @@
 - [x] Section 01 Getting Started
 - [x] Section 02 Fundamentals
 - [x] Section 03 Data from your Business
-- [ ] Section 04 Agentic Workflows
+- [x] Section 04 Agentic Workflows
 - [ ] Section 05 Making Your Life Easy
 
 ## 🎯 Learning Objectives
 
 - [x] Understand N8N basics and interface
-- [ ] Learn how to create AI agents
+- [x] Learn how to create AI agents
 - [ ] Master workflow automation concepts
 - [ ] Implement practical examples from the video
 - [ ] Understand integration possibilities
@@ -26,7 +26,7 @@
 
 - [x] N8N environment set up
 - [x] First workflow created
-- [ ] AI agent integration tested
+- [x] AI agent integration tested
 - [ ] Personal project started
 
 ## 📝 Notes and Insights

@@ -99,4 +99,6 @@ An intelligent chatbot that can understand context, make decisions, and escalate
 
 A comprehensive AI agent that monitors multiple support channels, analyzes customer sentiment for prioritization, automatically routes tickets, and can resolve issues across different systems without human intervention.
 
-to continue the video progress [click here](https://youtu.be/uScURRX-Knc?t=9945)
+By the end of the section we completely managed to export the data and details using AI agent into our new Table.
+
+![n8n workflow](TODO)
