@@ -1,5 +1,12 @@
 # AI Automation Lessons - Learning Progress
 
+## 📊 Progress Tracking
+
+### Overall Progress':'
+
+- [x] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started (section 1 getting started)
+- [ ] Section 2: Using n8n's webpage own video lessons and learning all from their own documentation!
+
 ## 📚 Project Overview
 
 This repository tracks my learning progress through AI Automation lessons and materials provided to me. Each section will have its own README.md file documenting my understanding, progress, and any practical implementations.
@@ -16,13 +23,6 @@ This repository tracks my learning progress through AI Automation lessons and ma
     ├── section-02/             # Second section materials
     └── ...                     # Additional sections
 ```
-
-## 📊 Progress Tracking
-
-### Overall Progress':'
-
-- [x] Section 1: [The only video you need to Master N8N + AI agents (For complete beginners)] - Started (section 1 getting started)
-- [ ] Section 2: Using n8n's webpage own video lessons and learning all from their own documentation!
 
 ## 📝 Learning Methodology
 
