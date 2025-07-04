@@ -9,7 +9,7 @@
 
 ---
 
-## Tips from the video:
+## Tips from the video
 
 **Use Sticky Notes for Workflow Documentation**: Add sticky notes throughout your n8n workflows to document what each node does, why it's there, and how it connects to other nodes. This makes complex workflows much easier to understand and maintain, especially when you return to them later or when sharing with team members.
 
@@ -25,7 +25,6 @@
 **Single Workflow Canvas Benefits:**
 
 Having just one workflow in the canvas improves execution logs clarity, makes debugging easier, and provides better performance monitoring since all nodes are visible in one execution trace rather than having to navigate between multiple workflow instances.
-
 
 ## Modular Design Benefits
 
@@ -61,17 +60,16 @@ You can reuse entire workflows by using n8n's "Execute Workflow" node, which all
 **Why Error Handling Matters:**
 Error handling prevents workflow failures from cascading and ensures data integrity even when individual nodes encounter issues.
 
-### Key Built-in Error Handling Methods:
+### Key Built-in Error Handling Methods
 
 1. **Error Trigger Node**: Catches and handles errors from other nodes for logging, notifications, or fallback logic
 2. **Split In Batches Node**: Processes data in smaller chunks so if one batch fails, others can still succeed
 3. **Set Node with Validation**: Uses JavaScript expressions to validate data and set default values when data is missing or invalid
 4. **IF Node for Conditional Logic**: Implements custom error handling based on specific conditions like missing required fields or invalid data formats
 
-### Best Practice:
+### Best Practice
 
 Create a centralized error handling workflow that logs all errors, categorizes them by severity, and sends notifications to appropriate team members when issues occur.
-
 
 ## Additional Best Practices for n8n Workflows
 
