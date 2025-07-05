@@ -1,0 +1,310 @@
+{
+  "name": "Debugging Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "1175f741-60cc-4300-a769-427ed0b769aa",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -260,
+        20
+      ],
+      "id": "ccd001c5-1d16-46d3-a13d-acb60a567525",
+      "name": "Webhook",
+      "webhookId": "1175f741-60cc-4300-a769-427ed0b769aa"
+    },
+    {
+      "parameters": {
+        "sendTo": "tsvetanov.simeon@gmail.com",
+        "subject": "testing debbugging errors in n8n",
+        "emailType": "text",
+        "message": "=This is the new user:\n\nFullname: {{ $json.fname }} {{ $json.lname }}\nid: {{ $json.id }}\nEmail: {{ $json.email }}\nFrom Company: {{ $json.company }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        480,
+        -180
+      ],
+      "id": "618b4b9a-1066-4f9d-8dd8-0ba3b96b35c8",
+      "name": "Send a message",
+      "webhookId": "d168bd5e-ec22-4d59-875a-d6b614347f56",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "OZpcNrFSLvdiRK15",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1e5b8fab-4860-4a35-85b3-55d89f149801",
+              "name": "row_id",
+              "value": "={{ $json.row_id }}\n",
+              "type": "number"
+            },
+            {
+              "id": "8a9bc804-63eb-48c5-9624-4acc712a3325",
+              "name": "",
+              "value": "={{ $json.row_id }}",
+              "type": "string"
+            },
+            {
+              "id": "5be5df18-f3ca-4bad-a818-c131ec83a90f",
+              "name": "",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "a380c7a3-a1e3-4348-bf3f-ac3bb4dd5a87",
+              "name": "email",
+              "value": "={{ $json.email }}",
+              "type": "string"
+            },
+            {
+              "id": "3360e6ec-cc69-4e79-a478-a9264f0472c0",
+              "name": "fname",
+              "value": "={{ $json.fname }}",
+              "type": "string"
+            },
+            {
+              "id": "1d2619e3-6e46-42fa-9af9-0cfb7fc2b118",
+              "name": "lname",
+              "value": "={{ $json.lname }}",
+              "type": "string"
+            },
+            {
+              "id": "2c92e844-9c13-4ec0-9a90-a253998c0f3e",
+              "name": "company",
+              "value": "={{ $json.company }}",
+              "type": "string"
+            },
+            {
+              "id": "4c15a548-40dd-41ef-8247-cdfab8db385c",
+              "name": "",
+              "value": "{{ $json.key }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -40,
+        20
+      ],
+      "id": "53a3aa36-a3ba-42db-9d59-72f26943087b",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "sendTo": "tsvetanov.simeon@gmail.com",
+        "subject": "testing debbugging errors in n8n",
+        "emailType": "text",
+        "message": "=This is the new user:\n\nFullname: {{ $json.fname }} {{ $json.lname }}\nEmail: {{ $json.email }}\nFrom Company: {{ $json.company }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        800,
+        20
+      ],
+      "id": "54a2206b-1c90-4d53-ade5-537751654224",
+      "name": "Send a message1",
+      "webhookId": "d168bd5e-ec22-4d59-875a-d6b614347f56",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "OZpcNrFSLvdiRK15",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3a7f7d27-7976-48e9-9512-737feac1b3e9",
+              "leftValue": "={{ $json.email }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        40
+      ],
+      "id": "041ff539-931b-4b99-91c8-ffe2a0920fc0",
+      "name": "IfEmail"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "3a7f7d27-7976-48e9-9512-737feac1b3e9",
+              "leftValue": "={{ $json.id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        180,
+        20
+      ],
+      "id": "6946ece2-848b-49e0-90fc-0438f6e148de",
+      "name": "IfId"
+    },
+    {
+      "parameters": {
+        "errorMessage": "no id or email givven"
+      },
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        800,
+        340
+      ],
+      "id": "dbe2c1fe-0064-4f92-9c2e-4818d19632af",
+      "name": "Stop and Error"
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "row_id": 2,
+          "id": "123",
+          "email": "tsvetanov.simeon@gmail.com",
+          "fname": "simeon",
+          "lname": "tsvetanov",
+          "company": "whatever"
+        }
+      }
+    ],
+    "Edit Fields": [
+      {
+        "json": {
+          "row_id": 2,
+          "": "{{ $json.key }}",
+          "fname": "simeon",
+          "lname": "tsvetanov",
+          "company": "whatever"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "IfId",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IfEmail": {
+      "main": [
+        [
+          {
+            "node": "Send a message1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Stop and Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IfId": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "IfEmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "da0696af-5bfd-4a1d-ae64-61304d3d3038",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "81e2b7bd94681b47604206365a28940f564233ce06039e176f90262c9b9fcf15"
+  },
+  "id": "mdk85Gz6m14rCrps",
+  "tags": []
+}

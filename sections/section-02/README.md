@@ -19,7 +19,7 @@ This section tracks progress through the n8n video course, split into Beginner a
 - [x] 05 Core workflow concepts
 - [x] 06 Useful nodes
 - [x] 07 Error handling
-- [ ] 08 Debugging
+- [x] 08 Debugging
 - [ ] 09 Collaboration
 
 ### Advanced
