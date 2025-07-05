@@ -20,7 +20,7 @@ This section tracks progress through the n8n video course, split into Beginner a
 - [x] 06 Useful nodes
 - [x] 07 Error handling
 - [x] 08 Debugging
-- [ ] 09 Collaboration
+- [x] 09 Collaboration
 
 ### Advanced
 
