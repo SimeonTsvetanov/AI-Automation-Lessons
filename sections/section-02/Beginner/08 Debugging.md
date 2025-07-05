@@ -114,4 +114,4 @@ Debugging in n8n is about systematically identifying where workflows break down 
 
 During the video we have created a simple workflow receiving new user we had to check if email and / or id was given and if so to confirm or if not to check what is missing and do an error.
 
-simple example can be found here: [Debugging Workflow Example](link-to-be-added)
+simple example can be found here: [Debugging Workflow Example](https://github.com/SimeonTsvetanov/AI-Automation-Lessons/blob/main/sections/section-02/Beginner/materials/WorkFlow%20-%20Debugging%20Basics.json)
